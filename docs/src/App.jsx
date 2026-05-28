@@ -7,7 +7,7 @@ import { Home, ProjectDetails } from './containers';
 export default function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <BrowserRouter basename='/Portfolio'>
         <AppContent />
       </BrowserRouter>
     </LanguageProvider>
