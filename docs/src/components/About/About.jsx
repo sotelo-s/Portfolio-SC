@@ -190,9 +190,10 @@ const About = () => {
           <div className="category">
             <h5>{skills ? skills.dataScience.title[language] || skills.dataScience.title.en : ""}</h5>
             <ul>
-              {skills ? skills.dataScience.items.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              )) : <></>}
+              {skills && skills.dataScience.items ?
+                (skills.dataScience.items[language] || skills.dataScience.items.en).map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                )) : null}
             </ul>
           </div>
 
@@ -200,9 +201,10 @@ const About = () => {
           <div className="category">
             <h5>{skills ? skills.fullStack.title[language] || skills.fullStack.title.en : ""}</h5>
             <ul>
-              {skills ? skills.fullStack.items.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              )) : <></>}
+              {skills && skills.fullStack.items ?
+                (skills.fullStack.items[language] || skills.fullStack.items.en).map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                )) : null}
             </ul>
           </div>
 
@@ -210,9 +212,10 @@ const About = () => {
           <div className="category">
             <h5>{skills ? skills.programmingLanguages.title[language] || skills.programmingLanguages.title.en : ""}</h5>
             <ul>
-              {skills ? skills.programmingLanguages.items.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              )) : <></>}
+              {skills && skills.programmingLanguages.items ?
+                (skills.programmingLanguages.items[language] || skills.programmingLanguages.items.en).map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                )) : null}
             </ul>
           </div>
 
@@ -220,9 +223,10 @@ const About = () => {
           <div className="category">
             <h5>{skills ? skills.tools.title[language] || skills.tools.title.en : ""}</h5>
             <ul>
-              {skills ? skills.tools.items.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              )) : ""}
+              {skills && skills.tools.items ?
+                (skills.tools.items[language] || skills.tools.items.en).map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                )) : null}
             </ul>
           </div>
         </div>

@@ -231,6 +231,31 @@ const ProjectDetails = () => {
                         case 'divider':
                             return <hr key={idx} className="my-4" />;
 
+                        case 'pdf':
+                            return (
+                                <div key={idx} className="content-pdf-container my-4">
+                                    <div className="pdf-wrapper">
+                                        <iframe
+                                            src={getProjectImage(item.src)}
+                                            className="pdf-iframe"
+                                            title={item.title || 'PDF Document'}
+                                            style={{
+                                                width: '100%',
+                                                height: item.height || '600px',
+                                                border: '1px solid rgba(121, 235, 255, 0.2)',
+                                                borderRadius: '8px'
+                                            }}
+                                        />
+                                    </div>
+                                    {item.caption && (
+                                        <p className="text-muted text-center mt-2 small">
+                                            {item.caption}
+                                        </p>
+                                    )}
+                                    
+                                </div>
+                            );
+
                         default:
                             return null;
                     }
@@ -468,35 +493,36 @@ const ProjectDetails = () => {
                                 </div>
 
                                 {/*enlaces rapidos*/}
-                                <div className="sidebar-section links-section">
-                                    <h4 className="sidebar-title">
-                                        {t("i_quick_links", "Quick Links")}
-                                    </h4>
-                                    <div className="project-links-buttons">
-                                        {github && (
-                                            <a
-                                                href={github}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="btn btn-outline-primary w-100 mb-2 d-flex align-items-center justify-content-center"
-                                            >
-                                                <i className="fab fa-github me-2"></i>
-                                                {t("i_view_code", "View Code")}
-                                            </a>
-                                        )}
-                                        {demo && (
-                                            <a
-                                                href={demo}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="btn btn-primary w-100 d-flex align-items-center justify-content-center"
-                                            >
-                                                <i className="fas fa-external-link-alt me-2"></i>
-                                                {t("i_live_demo", "Live Demo")}
-                                            </a>
-                                        )}
-                                    </div>
-                                </div>
+                                {(github || demo) &&
+                                    <div className="sidebar-section links-section">
+                                        <h4 className="sidebar-title">
+                                            {t("i_quick_links", "Quick Links")}
+                                        </h4>
+                                        <div className="project-links-buttons">
+                                            {github && (
+                                                <a
+                                                    href={github}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="btn btn-outline-primary w-100 mb-2 d-flex align-items-center justify-content-center"
+                                                >
+                                                    <i className="fab fa-github me-2"></i>
+                                                    {t("i_view_code", "View Code")}
+                                                </a>
+                                            )}
+                                            {demo && (
+                                                <a
+                                                    href={demo}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="btn btn-primary w-100 d-flex align-items-center justify-content-center"
+                                                >
+                                                    <i className="fas fa-external-link-alt me-2"></i>
+                                                    {t("i_live_demo", "Live Demo")}
+                                                </a>
+                                            )}
+                                        </div>
+                                    </div>}
 
                                 {/*caracteristicas*/}
                                 {features?.length > 0 && (

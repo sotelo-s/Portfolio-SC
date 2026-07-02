@@ -14,6 +14,10 @@ import gatewayUIEn from '../assets/projects/gallery/gateway-ui-en.png';
 //portfolio
 import portfolioMain from '../assets/projects/portfolio.png';
 
+//pdfs
+import adhdThesis from '../assets/projects/adhd-thesis.pdf';
+
+
 
 const imageMap = {
   //gateway
@@ -30,7 +34,9 @@ const imageMap = {
   'gateway-ui-en.png': gatewayUIEn,
 
   //portfolio
-  'portfolio.png' : portfolioMain
+  'portfolio.png' : portfolioMain,
+
+  'adhd-thesis.pdf' : adhdThesis
 };
 
 /**

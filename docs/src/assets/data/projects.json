@@ -1,65 +1,153 @@
 [
     {
         "name": {
-            "en": "Personal Portfolio Website",
-            "es": "Sitio Web de Portafolio Personal"
+            "en": "Personality Disorder Detection Based on Narratives",
+            "es": "Detección de Trastornos de la Personalidad basada en Narrativas"
         },
-        "slug": "portfolio",
+        "slug": "adhd-detection",
         "category": {
-            "en": "Frontend Development",
-            "es": "Desarrollo Frontend"
+            "en": "Machine Learning & NLP",
+            "es": "Machine Learning & NLP"
         },
         "status": {
-            "en": "Completed",
-            "es": "Completado"
+            "en": "Completed (Master's Thesis)",
+            "es": "Completado (Trabajo de Fin de Máster)"
         },
+        "colaboration": [
+            {
+                "en": "CiTIUS - Research Centre on Intelligent Technologies",
+                "es": "CiTIUS - Centro Singular de Investigación en Tecnologías Inteligentes",
+                "img": "https://wiki.citius.gal/_media/centro:identidade:positivo_logotipo_citius.png",
+                "link": "https://citius.gal/"
+            },
+            {
+                "en": "University of Santiago de Compostela",
+                "es": "Universidad de Santiago de Compostela",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Logotype_of_Universidade_de_Santiago_de_Compostela.svg",
+                "link": "https://www.usc.gal/"
+            }
+        ],
         "description": {
-            "en": "A modern React-based portfolio website showcasing projects and skills. Features internationalization, responsive design, and interactive components without backend dependencies.",
-            "es": "Un sitio web de portafolio moderno basado en React para mostrar proyectos y habilidades. Incluye internacionalización, diseño responsivo y componentes interactivos sin dependencias de backend."
+            "en": "Construction of a multimodal Reddit corpus labeled with ADHD (~7,000 users, ~2M posts) and evaluation of classification models (Naive Bayes, BERT, LLaVA-NeXT) for automatic detection. Includes linguistic analysis of emotions, sentiment, and behavioral patterns.",
+            "es": "Construction of a multimodal Reddit corpus with ADHD users and controls, comparative linguistic analysis, and evaluation of three classification strategies (Bag-of-Words, BERT, and LLaVA-NeXT), as a Master's Thesis (TFM)."
         },
         "date": {
-            "en": "Feb 2026",
-            "es": "Feb 2026"
+            "en": "Feb 2026 - Jul 2026",
+            "es": "Feb 2026 - Jul 2026"
         },
         "technologies": [
-            "React",
-            "JavaScript",
-            "HTML5/CSS3",
-            "React i18next",
-            "JSON",
-            "Responsive Design",
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Scikit-learn",
+            "Hugging Face Transformers",
+            "BERT",
+            "LLaVA-NeXT",
+            "Matplotlib",
+            "Seaborn",
+            "Beautiful Soup",
+            "Jupyter Notebook",
+            "HPC",
             "Git"
         ],
         "features": {
             "en": [
-                "Full bilingual support (English/Spanish)",
-                "Interactive project showcase",
-                "No backend required",
-                "Responsive design for all devices",
-                "Content managed via JSON files",
-                "Deployable as static site"
+                "Multimodal corpus construction from Reddit (~7,000 users, ~2M posts, ~15,000 images)",
+                "Linguistic analysis: emotions, sentiment, and thematic content (Empath)",
+                "Three classification strategies: BoW + Naive Bayes, fine-tuned BERT, zero-shot LLaVA-NeXT",
+                "User-level evaluation protocol with threshold optimization",
+                "Overfitting and error analysis",
+                "Ethical considerations: data anonymization (HMAC-SHA256), face blurring (YOLOv8)"
             ],
             "es": [
-                "Soporte bilingüe completo (Inglés/Español)",
-                "Exhibición interactiva de proyectos",
-                "Sin backend requerido",
-                "Diseño responsivo para todos los dispositivos",
-                "Contenido gestionado mediante archivos JSON",
-                "Desplegable como sitio estático"
+                "Construcción de corpus multimodal de Reddit (~7.000 usuarios, ~2M publicaciones, ~15.000 imágenes)",
+                "Análisis lingüístico: emociones, sentimiento y contenido temático (Empath)",
+                "Tres estrategias de clasificación: BoW + Naive Bayes, BERT fine-tuned, LLaVA-NeXT zero-shot",
+                "Protocolo de evaluación a nivel de usuario con optimización de umbral",
+                "Análisis de sobreajuste y errores",
+                "Consideraciones éticas: anonimización de datos (HMAC-SHA256), difuminado de caras (YOLOv8)"
             ]
         },
-        "img": "portfolio.png",
-        "github": "https://github.com/sotelo-s/Portfolio",
+        "img": "adhd-detection.png",
         "expanded-description": {
             "en": [
-                "This portfolio website is built entirely as a frontend-only React application. All content is stored in JSON files, making it easy to update without touching the codebase.",
-                "The site demonstrates modern frontend practices while maintaining simplicity and performance. No backend or database is required, reducing complexity and hosting costs."
+                "This Master's Thesis addresses the detection of Attention Deficit Hyperactivity Disorder (ADHD) from social media language, a condition that has received little attention from the NLP community despite its well-documented linguistic manifestations.",
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Corpus Construction"
+                },
+                "A novel multimodal corpus was built from Reddit, comprising 6,847 users (1,544 with self-reported ADHD, 5,303 controls), nearly 2 million posts and comments, and over 15,000 images. Data was collected via a custom crawler and anonymized using HMAC-SHA256. Face detection (YOLOv8) and explicit content filtering were applied for public release.",
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Linguistic Analysis"
+                },
+                "A comparative analysis examined posting behavior, emotional expression, sentiment, and thematic content across groups. ADHD users posted more frequently (2.0 vs 1.0 items per active day), exhibited higher negative affect, and expressed less positive sentiment. Thematic content overlapped substantially between groups.",
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Classification Experiments"
+                },
+                "Three strategies were benchmarked:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Bag-of-Words + Multinomial Naive Bayes (baseline)",
+                        "Fine-tuned BERT (bert-base-uncased)",
+                        "Zero-shot multimodal LLaVA-NeXT (text + images)"
+                    ]
+                },
+                "Performance improved with model complexity (AUC from 0.554 to 0.711), yet F1 peaked at 0.480. Images contributed negligibly.",
+                {
+                    "type": "pdf",
+                    "src": "/assets/projects/adhd-thesis.pdf",
+                    "title": "ADHD Detection Thesis",
+                    "height": "800px",
+                    "caption": "Full Master's Thesis Document"
+                }
             ],
             "es": [
-                "Este sitio web de portafolio está desarrollado completamente como una aplicación React solo de frontend. Todo el contenido se almacena en archivos JSON, facilitando actualizaciones sin modificar el código base.",
-                "El sitio demuestra prácticas modernas de frontend manteniendo simplicidad y rendimiento. No se requiere backend ni base de datos, reduciendo complejidad y costos de hosting."
+                "Este Trabajo de Fin de Máster aborda la detección del Trastorno por Déficit de Atención e Hiperactividad (TDAH) a partir del lenguaje en redes sociales, una condición que ha recibido poca atención por parte de la comunidad de NLP a pesar de sus manifestaciones lingüísticas documentadas.",
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Construcción del Corpus"
+                },
+                "Se construyó un corpus multimodal novedoso a partir de Reddit, compuesto por 6.847 usuarios (1.544 con TDAH auto-reportado, 5.303 controles), casi 2 millones de publicaciones y comentarios, y más de 15.000 imágenes. Los datos se recopilaron mediante un crawler personalizado y se anonimizaron usando HMAC-SHA256. Se aplicó detección de caras (YOLOv8) y filtrado de contenido explícito para la publicación.",
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Análisis Lingüístico"
+                },
+                "Se realizó un análisis comparativo del comportamiento de publicación, expresión emocional, sentimiento y contenido temático entre grupos. Los usuarios con TDAH publicaron con mayor frecuencia (2.0 vs 1.0 publicaciones por día activo), mostraron mayor afecto negativo y expresaron menos sentimiento positivo. El contenido temático mostró un solapamiento sustancial entre grupos.",
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Experimentos de Clasificación"
+                },
+                "Se evaluaron tres estrategias:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Bag-of-Words + Naive Bayes Multinomial (línea base)",
+                        "BERT fine-tuned (bert-base-uncased)",
+                        "LLaVA-NeXT multimodal zero-shot (texto + imágenes)"
+                    ]
+                },
+                "El rendimiento mejoró con la complejidad del modelo (AUC de 0.554 a 0.711), aunque el F1 alcanzó un máximo de 0.480. Las imágenes contribuyeron de forma negligible.",
+                {
+                    "type": "pdf",
+                    "src": "/assets/projects/adhd-thesis.pdf",
+                    "title": "TFM de Detección de TDAH",
+                    "height": "800px",
+                    "caption": "Documento completo del TFM",
+                    "downloadLink": "/assets/projects/adhd-thesis.pdf",
+                    "downloadText": "Descargar PDF del TFM"
+                }
             ]
-        }
+        },
+        "github": "https://github.com/sotelo-s/ADHD-Reddit-Research"
     },
     {
         "name": {
@@ -89,8 +177,8 @@
                 "link": "https://www.usc.gal/"
             }
         ],
-        "achievements" : {
-            "en":"HP Technology Observatory Award Finalist",
+        "achievements": {
+            "en": "HP Technology Observatory Award Finalist",
             "es": "Finalista Premio Observatorio Tecnológico HP"
         },
         "description": {

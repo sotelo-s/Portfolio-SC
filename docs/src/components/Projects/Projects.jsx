@@ -84,7 +84,6 @@ const Projects = () => {
               <div 
                 className="project-card" 
                 key={index}
-                onClick={() => handleProjectClick(project)}
                 style={{ cursor: 'pointer' }}
               >
                 {/*imagen del proyecto*/}
@@ -191,10 +190,6 @@ const Projects = () => {
                       {t("i_live_demo", "Live Demo")}
                     </a>
                   )}
-                </div>
-
-                {/*ver detalles*/}
-                <div className="project-view-details mt-3" onClick={handleLinkClick}>
                   <button 
                     className="btn btn-outline-secondary btn-sm"
                     onClick={(e) => {
@@ -205,6 +200,11 @@ const Projects = () => {
                     {t("i_view_details", "View Details")} →
                   </button>
                 </div>
+
+                {/*ver detalles
+                <div className="project-view-details mt-3" onClick={handleLinkClick}>
+                  
+                </div>*/}
               </div>
             );
           })}
