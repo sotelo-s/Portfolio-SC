@@ -7,7 +7,31 @@
             "link" : "https://www.usc.gal/"
         },
         "title": {
-            "en": "Master in Big Data",
+            "en": "PhD in Information Technology Research",
+            "es": "Programa de Doctorado en Investigación en Tecnologías de la Información"
+        },
+        "dates": {
+            "en": "Sept 2026 - Now",
+            "es": "Sept 2026 - Actual"
+        },
+        "description": {
+            "en": "",
+            "es": ""
+        },
+        "tags": {
+            "en": [],
+            "es": []
+        }
+    },
+    {
+        "place": {
+            "en": "University of Santiago de Compostela",
+            "es": "Universidad de Santiago de Compostela",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Logotype_of_Universidade_de_Santiago_de_Compostela.svg",
+            "link" : "https://www.usc.gal/"
+        },
+        "title": {
+            "en": "Master's in Big Data",
             "es": "Máster en Big Data"
         },
         "dates": {
@@ -18,7 +42,7 @@
             "en": "Original title: Máster Universitario en Tecnologías de Análisis de Datos Masivos: Big Data",
             "es": "Título original: Máster Universitario en Tecnologías de Análisis de Datos Masivos: Big Data"
         },
-        "gpa": "8.31/10",
+        "gpa": "8.76/10",
         "tags": {
             "en": [],
             "es": []

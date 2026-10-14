@@ -1,8 +1,8 @@
 {
     "i_about": "About",
 
-    "i_about_text_1": "Graduated in Computer Engineering from the University of Santiago de Compostela and currently in the final phase of the Master's in Big Data at the same university, I am about to complete my academic training with the presentation of my Master's Thesis. Throughout these years, I have developed a solid technical foundation in programming, data analysis, and artificial intelligence, combined with a growing passion for scientific research applied to real-world problems.",
-    "i_about_text_2": "My professional goal is to steer my career towards research through a PhD in Information Technology. I am particularly passionate about natural language processing applied to social media, an area where my interests in massive data, artificial intelligence, and the social impact of technology converge.",
+    "i_about_text_1": "PhD student in Information Technology and researcher in CiTIUS. Graduated in Computer Engineering from the University of Santiago de Compostela and Master's in Big Data. Throughout these years, I have developed a solid technical foundation in programming, data analysis, and artificial intelligence, combined with a growing passion for scientific research applied to real-world problems.",
+    "i_about_text_2": "I am particularly passionate about natural language processing applied to social media, an area where my interests in massive data, artificial intelligence, and the social impact of technology converge.",
     "i_about_title": "About Me",
     "i_collaboration": "Collaboration with",
     "i_connect_with_me": "Connect with me",
@@ -24,8 +24,8 @@
     "i_skills_title": "Technical Skills",
     "i_view_code": "View Code",
     "i_viewcv": "View CV",
-    "i_titleText": "Graduate in Computer Engineering",
-    "i_extraText": "& Master's student in Big Data",
+    "i_titleText": "IT PhD Student",
+    "i_extraText": "Computer Engineer | Master's in Big Data",
     "i_download_cv": "Download CV",
 
     "i_back_to_projects": "Go back",

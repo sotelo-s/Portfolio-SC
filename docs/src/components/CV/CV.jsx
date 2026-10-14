@@ -38,8 +38,8 @@ const CV = () => {
       <iframe 
         className='cv'
         src={cv[language]}
-        width="80%"
-        height="500px"
+        width="50%"
+        height= {'860px'}
         title="Curriculum Vitae"
       />
     </div>

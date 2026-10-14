@@ -1,10 +1,44 @@
 [
+    
+    {
+        "place": {
+            "en": "CiTIUS - Research Centre on Intelligent Technologies",
+            "es": "CiTIUS - Centro Singular de Investigación en Tecnologías Inteligentes",
+            "img": "https://wiki.citius.gal/_media/centro:identidade:positivo_logotipo_citius.png",
+            "link": "https://citius.gal/"
+        },
+        "role": {
+            "en": "Collaborative Researcher",
+            "es": "Investigadora Colaboradora"
+        },
+        "date": {
+            "en": "Sept 2026 - Now",
+            "es": "Sept 2026 - Actual"
+        },
+        "description": {
+            "en": "Text mining, search, and natural language processing for the detection of Attention Deficit Hyperactivity Disorder (ADHD) based on online narratives.",
+            "es": "Minería de texto, búsqueda y procesamiento de lenguaje natural para la detección del Trastorno por Déficit de Atención e Hiperactividad (TDAH) basado en narrativas online."
+        },
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Scikit-learn",
+            "Hugging Face Transformers",
+            "BERT",
+            "Matplotlib",
+            "Seaborn",
+            "HPC",
+            "Git"
+        ]
+    },
+    
     {
         "place": {
             "en": "GSERTEL (Televes Corporation)",
             "es": "GSERTEL (Televes Corporation)",
             "img": "https://televescorporation.com/wp-content/uploads/2017/07/logos3_0002_Vector-Smart-Object.png",
-            "link" : "https://www.gsertel.com/"
+            "link": "https://www.gsertel.com/"
         },
         "role": {
             "en": "Internship - Backend Developer",

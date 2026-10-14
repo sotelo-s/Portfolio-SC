@@ -29,8 +29,8 @@
             "es": "Inglés"
         },
         "level": {
-            "en": "C1 (Advanced)",
-            "es": "C1 (Avanzado)"
+            "en": "C1",
+            "es": "C1"
         },
         "levelClass": "level-c1",
         "flagCode": "en"
@@ -41,8 +41,8 @@
             "es": "Alemán"
         },
         "level": {
-            "en": "A1 (Beginner)",
-            "es": "A1 (Principiante)"
+            "en": "A1",
+            "es": "A1"
         },
         "levelClass": "level-a1",
         "flagCode": "de"
